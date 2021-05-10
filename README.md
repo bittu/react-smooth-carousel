@@ -1,2 +1,2 @@
 # react-smooth-carousel
-A React Smooth Carousel Componet for any content
+A React Smooth Carousel Component for any content
