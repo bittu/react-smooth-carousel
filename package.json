@@ -2,9 +2,11 @@
   "name": "react-smooth-carousel",
   "version": "1.0.0",
   "description": "A React Smooth Carousel Component for any content",
-  "main": "index.js",
+  "main": "dist/index.js",
+  "module": "dist/index.es.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rollup -c",
+    "start": "rollup -c -w"
   },
   "repository": {
     "type": "git",
@@ -22,5 +24,24 @@
   "bugs": {
     "url": "https://github.com/bittu/react-smooth-carousel/issues"
   },
-  "homepage": "https://github.com/bittu/react-smooth-carousel#readme"
+  "homepage": "https://github.com/bittu/react-smooth-carousel#readme",
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.5",
+    "@types/react-dom": "^17.0.3",
+    "babel-core": "^6.26.3",
+    "babel-runtime": "^6.26.0",
+    "react": "*",
+    "react-dom": "*",
+    "rollup": "^2.47.0",
+    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-typescript2": "^0.30.0",
+    "typescript": "^4.2.4"
+  },
+  "files": [
+    "dist"
+  ]
 }
