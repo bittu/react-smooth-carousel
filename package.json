@@ -1,0 +1,26 @@
+{
+  "name": "react-smooth-carousel",
+  "version": "1.0.0",
+  "description": "A React Smooth Carousel Component for any content",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bittu/react-smooth-carousel.git"
+  },
+  "keywords": [
+    "react-carousel",
+    "react-smooth-carousel",
+    "react",
+    "carousel",
+    "component"
+  ],
+  "author": "Sandeep Vemula",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bittu/react-smooth-carousel/issues"
+  },
+  "homepage": "https://github.com/bittu/react-smooth-carousel#readme"
+}
