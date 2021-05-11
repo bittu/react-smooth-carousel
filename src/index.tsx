@@ -1,11 +1,4 @@
-import React from 'react'
+export { default as CarouselItem } from './Carousel/CarouselItem'
 
-const Carousel: React.FC = () => {
-  return (
-    <div>
-      Carousel
-    </div>
-  )
-}
-
+import Carousel from './Carousel/Carousel'
 export default Carousel

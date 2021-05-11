@@ -4,6 +4,7 @@
   "description": "A React Smooth Carousel Component for any content",
   "main": "dist/index.js",
   "module": "dist/index.es.js",
+  "src": "src/index.tsx",
   "scripts": {
     "build": "rollup -c",
     "start": "rollup -c -w"
@@ -30,18 +31,25 @@
     "react-dom": "^16.8.0"
   },
   "devDependencies": {
+    "@rollup/plugin-commonjs": "^19.0.0",
+    "@rollup/plugin-node-resolve": "^13.0.0",
     "@types/react": "^17.0.5",
     "@types/react-dom": "^17.0.3",
     "babel-core": "^6.26.3",
     "babel-runtime": "^6.26.0",
+    "node-sass": "^6.0.0",
     "react": "*",
     "react-dom": "*",
     "rollup": "^2.47.0",
-    "rollup-plugin-sass": "^1.2.2",
+    "rollup-plugin-peer-deps-external": "^2.2.4",
+    "rollup-plugin-postcss": "^4.0.0",
     "rollup-plugin-typescript2": "^0.30.0",
     "typescript": "^4.2.4"
   },
   "files": [
     "dist"
-  ]
+  ],
+  "dependencies": {
+    "classnames": "^2.3.1"
+  }
 }

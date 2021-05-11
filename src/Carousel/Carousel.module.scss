@@ -1,0 +1,93 @@
+
+.carousel {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+
+  ul {
+    display: flex;
+    padding: 0;
+    overflow: hidden;
+    overflow-x: scroll;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    -ms-overflow-style: none;
+  }
+  ul::-webkit-scrollbar {
+    display: none;
+  }
+  @supports (scrollbar-width: none) {
+    ul {
+      scrollbar-width: none;
+    }
+  }
+  li {
+    flex-shrink: 0;
+    list-style: none;
+    display: inline-block;
+    transition: all 0.5s ease-in-out;
+    padding: 10px;
+
+    &:empty {
+      padding: 0;
+    }
+  }
+  .right-button,
+  .left-button {
+    background-color: rgba(0, 0, 0, 0.5);
+    background-position: 50%;
+    background-repeat: no-repeat;
+    border: 0;
+    position: absolute;
+    z-index: 1;
+    top: 40%;
+    transform: translateY(-50%);
+    outline: none;
+    border-radius: 50%;
+    transition: all .3s ease-in;
+    width: 50px;
+    height: 50px;
+    padding: 10px 20px;
+
+    &:hover {
+      background-color: rgba(0, 0, 0, 0.75);
+    }
+  }
+
+  .left-button {
+    left: -50px;
+  }
+
+  .right-button {
+    right: -50px;
+  }
+
+  &:hover {
+    .left-button {
+      left: 0;
+    }
+    .right-button {
+      left: none;
+      right: 0;
+    }
+  }
+
+  &.menu {
+    // height: 44px;
+
+    .right-button,
+    .left-button {
+      width: 30px;
+      height: 30px;
+      padding: 10px;
+    }
+  }
+
+  &.centerArrows {
+    .right-button,
+    .left-button {
+      top: 50%;
+    }
+  }
+}
